@@ -1,22 +1,20 @@
 // src/App.js
 import React from "react";
-// import Header from "./components/Header";
-// import Hero from "./components/Hero";
-// import Features from "./components/Features";
-// import Footer from "./components/Footer";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Header from "./component/Header";
 import Hero from "./component/Hero";
 import Features from "./component/Features";
 import Footer from "./component/Footer";
+import Innovation from "./component/Innovation";
 
 function App() {
   return (
     <ParallaxProvider>
-      <div className="font-sans">
+      <div className="font-sans bg-gray-50 relative overflow-hidden">
         <Header />
         <Hero />
         <Features />
+        <Innovation />
         <Footer />
       </div>
     </ParallaxProvider>
